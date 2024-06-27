@@ -10,8 +10,8 @@
             //Tag
             get_template_part( 'template-parts/tag' ); 
 
-            //Tag
-            get_template_part( 'template-parts/month' );
+            //Month
+            // get_template_part( 'template-parts/month' );
         ?> 
     </div> <!-- /sticky-->
 </div> <!-- /col-md-3-->

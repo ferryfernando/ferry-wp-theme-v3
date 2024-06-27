@@ -13,7 +13,7 @@
                 // Post
                 // Example argument that defines three posts per page. 
                 $args = array( 
-                    // 'posts_per_page' => 3,
+                    'posts_per_page' => 3,
                     'category__not_in' => 2,
                     'post__not_in' => get_option( 'sticky_posts' ) 
                 ); 

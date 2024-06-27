@@ -4,7 +4,10 @@
     <div class="row">
         <div class="col-md-9 p-0">
             <div class="alert alert-secondary" role="alert">
-                <?php single_cat_title('Kategori: ', 'textdomain'); ?>
+                <?php 
+                    single_cat_title('Kategori: ', 'textdomain'); 
+                    $category = get_queried_object(); echo ' <i class="small">('.$category->count.' tulisan ditemukan)</i>';
+                ?>
             </div>
             <?php 
                 if (have_posts()) : 

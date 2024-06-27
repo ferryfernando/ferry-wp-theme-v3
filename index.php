@@ -16,7 +16,7 @@
 				else :
 				?>
 				<div class="alert alert-danger" role="alert">
-                	Tidak ada konten.
+                	Halaman yang dimaksud tidak ada.
             	</div>
 				<?php
 				endif; 

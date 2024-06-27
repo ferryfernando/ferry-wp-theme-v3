@@ -6,7 +6,6 @@
             <?php 
                 // Post
                 // Example argument that defines three posts per page. 
-
                 $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 
                 $args = array( 
@@ -32,7 +31,6 @@
 
                 wp_reset_postdata(); 
             ?> 
-            
         </div> <!-- /.col-md-9 -->
 
         <?php get_template_part( 'sidebar' ); ?>

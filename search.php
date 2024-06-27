@@ -4,7 +4,10 @@
     <div class="row">
         <div class="col-md-9 p-0">
             <div class="alert alert-secondary" role="alert">
-                Pencarian Untuk: <?php the_search_query(); ?>
+                Hasil pencarian untuk: "<?php the_search_query();?>"
+                <?php
+                global $wp_query;
+                echo ' <i class="small">('.$wp_query->found_posts.' tulisan ditemukan)</i>';?>
             </div>
             <?php 
                 if (have_posts() && $_GET['s'] != '') :
@@ -13,7 +16,7 @@
                     endwhile;
                     echo bootstrap_pagination();
                 else :
-                    echo '<p class="text-danger ps-3">Tidak ada konten.</p>';
+                    echo '<p class="text-danger ps-3">Tidak ada tulisan ditemukan.</p>';
                 endif; 
                 wp_reset_postdata();
             ?> 

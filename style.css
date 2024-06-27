@@ -1,157 +1,26 @@
 /*!
-Theme Name: Ferry WP Theme v2
+Theme Name: Ferry WP Theme v3
 Theme URI: http://www.ferryfernando.com/
 Author: Ferry Fernando
 Author URI: http://www.ferryfernando.com
-Description: Theme yang terinspirasi dari Staterbootsrap/Resume, menggunakan Bootstrap 5.
-Version: 2.0.0
+Description: Theme yang terinspirasi dari Staterbootsrap/Resume, menggunakan Bootstrap 5.3.3.
+Version: 3.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: bootstrap, side-bar
 
-Terima kasih untuk semuanya. Mudah-mudahan tidak ada melanggar apa-apa yah.
+Terima kasih untuk semuanya. Mudah-mudahan tidak ada melanggar apa-apa.
 */
+
 
 body {
     padding-top: 3.375rem;
     font-family: 'Ubuntu', sans-serif;
 }
 
-h1,
-.h1 {
-    line-height: 1;
-}
-
-img {
-	height: auto;
-	max-width: 100%;
-	vertical-align: middle;
-}
-
-#sideNav {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-#sideNav .navbar-toggler:focus {
-    outline-color: #d48a6e;
-}
-
-
-@media (max-width: 767.98px) {
-    #jumbo,
-    .nav-bb {
-        border-bottom: 1px solid #dee2e6;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .sticky-ahua {
-        top: 3.5rem;
-    }
-}
-
-.card-post {
-    border: 0;
-}
-
-.list-group-item.active,
-.list-group-item:hover,
-.btn-outline-primary:hover {
-    background-color: #f012be;
-    border-radius: 0;
-}
-
-.list-group-item:hover {
-    color: #ffffff;
-}
-
-.btn-outline-primary:hover,
-.btn-outline-primary.active {
-    border-color: #f012be;
-}
-
-.btn-check:active+.btn-outline-primary,
-.btn-check:checked+.btn-outline-primary,
-.btn-outline-primary.active,
-.btn-outline-primary.dropdown-toggle.show,
-.btn-outline-primary:active {
-    color: #fff;
-    background-color: #f012be;
-}
-
-.btn-check:focus+.btn-outline-primary,
-.btn-outline-primary:focus {
-    border-color: #f012be;
-    box-shadow: 0 0 0 0.25rem rgb(240 18 190 / 50%);
-}
-
-.btn-check:active+.btn-outline-primary:focus,
-.btn-check:checked+.btn-outline-primary:focus,
-.btn-outline-primary.active:focus,
-.btn-outline-primary.dropdown-toggle.show:focus,
-.btn-outline-primary:active:focus {
-    box-shadow: 0 0 0 0.25rem rgb(240 18 190 / 50%);
-}
-
-/* .btn-check:active+.btn-outline-primary,
-.btn-check:checked+.btn-outline-primary,
-.btn-outline-primary.active,
-.btn-outline-primary.dropdown-toggle.show,
-.btn-outline-primary:active {
-    border-color: #f012be;
-} */
-
-a, a.text-pink {
-    text-decoration: none;
-}
-
-h3 a:hover, .card-body li a:hover, ul li a:hover {
-    color: #f012be;
-    text-decoration: underline;
-}
-
-
-a.nav-link:hover {
-    text-decoration: none;
-}
-
-.form-control:focus {
-    color: #212529;
-    background-color: #fff;
-    border-color: #f012be;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(240 18 190 / 25%);
-}
-
-.alert {
-    border-radius: 0;
-}
-
-.bg-dark-ffe {
-    background-color: #000000;
-}
-
-/* 
-article p, img, figure, h1, ul.list-inline {
-    padding-left: 1rem;
-    padding-right: 1rem;
-} */
-
-.page-item:first-child .page-link,
-.page-item:last-child .page-link {
-    border-radius: 0;
-}
-
-@media (min-width: 1200px) {
-    .carousel-item {
-        height: 65vh;
-        min-height: 350px;
-        background: no-repeat center center scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
     }
 }
 
@@ -208,25 +77,149 @@ article p, img, figure, h1, ul.list-inline {
     }
 }
 
-img {
-	height: auto;
-	max-width: 100%;
-	vertical-align: middle;
+@media (min-width: 1200px) {
+    .carousel-item {
+        height: 65vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
 
-.active a span{
+@media (max-width: 767.98px) {
+
+    #jumbo,
+    article,
+    .nav-bb {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .sticky-ahua {
+        top: 3.5rem;
+    }
+}
+
+#sideNav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card-post {
+    border: 0;
+}
+
+.list-group-item.active,
+.list-group-item:hover {
+    background-color: #f012be;
+    border-radius: 0;
+}
+
+.list-group-item:hover {
+    color: #ffffff;
+}
+
+.btn-check:active+.btn-outline-primary,
+.btn-check:checked+.btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active,
+.btn-outline-primary:hover,
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
     color: #fff;
-  }
+    background-color: #f012be;
+    border-color: #f012be;
+}
 
-  .page-item.active .page-link {
-      background-color: #f012be;
-      border-color: #f012be;
-  }
+.btn-check:active+.btn-outline-primary:focus,
+.btn-check:checked+.btn-outline-primary:focus,
+.btn-check:focus+.btn-outline-primary,
+.btn-outline-primary:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus,
+.btn-outline-primary:active:focus {
+    border-color: #f012be;
+    box-shadow: 0 0 0 0.25rem rgb(240 18 190 / 50%);
+}
 
-  .page-link:hover {
-      text-decoration: none;
-  }
+a,
+a.page-link:hover,
+a.nav-link:hover {
+    text-decoration: none;
+}
 
-  .post-last-modified-td, .page-last-modified-td {
-    display: inline-block !important;
+h3 a:hover,
+.card-body li a:hover,
+ul li a:hover {
+    color: #f012be;
+    text-decoration: underline;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: rgb(240, 18, 190);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(240 18 190 / 25%);
+}
+
+.alert {
+    border-radius: 0;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    border-radius: 0;
+}
+
+
+.carousel-item {
+    /* background-color: #000000; */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 28, 30, 0)), color-stop(90%, rgba(27, 28, 30, 0.8)));
+    background: linear-gradient(180deg, rgba(27, 28, 30, 0) 0%, rgba(27, 28, 30, 0.8) 90%);
+    height: 100%;
+}
+
+.carousel-item img {
+    opacity: 0.8;
+    max-height: 500px;
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0.25rem rgba(240, 18, 190, 0.25);
+}
+
+.blockquote {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.blockquote cite {
+    font-size: .875em;
+    color: #6c757d;
+}
+
+.blockquote-footer {
+    margin-bottom: 0;
+}
+
+#jumbo figure {
+    margin-bottom: 0;
+}
+
+.page-item.active .page-link {
+    background-color: #f012be;
+    border-color: #f012be;
+}
+
+p.kutipan {
+    margin-bottom: 0;
 }

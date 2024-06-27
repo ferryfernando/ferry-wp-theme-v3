@@ -11,7 +11,7 @@
             $tags = get_tags( $args );
             
             foreach( $tags as $tag ) {
-                echo '<a href="'. get_tag_link( $tag->term_id ) .'" class="btn btn-outline-primary btn-sm rounded-0 m-1 '. (get_tag_link( $tag->term_id ) == get_tag_link( get_query_var( 'tag_id' ) ) ? 'active' : '') .' ">' . $tag->name. '</a>';
+                echo '<a href="'. get_tag_link( $tag->term_id ) .'" class="btn btn-outline-primary btn-sm rounded-0 m-1 position-relative'. (get_tag_link( $tag->term_id ) == get_tag_link( get_query_var( 'tag_id' ) ) ? 'active' : '') .' ">' . $tag->name. ' <span class="badge rounded-pill text-bg-primary">' . $tag->count . '</span> </a>';
             } 
             wp_reset_postdata();
         ?>

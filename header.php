@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> data-bs-theme="light">
 
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -17,7 +17,7 @@
 
     <header>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-ffe fixed-top" id="sideNav">
+        <nav class="navbar navbar-expand-lg bg-black fixed-top" id="sideNav" role="navigation" data-bs-theme="dark">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="navbar-brand"><?php bloginfo('name'); ?></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

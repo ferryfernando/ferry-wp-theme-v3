@@ -7,9 +7,11 @@
                 <?php 
 					if(is_tag()) {
 						single_tag_title('Tag: ', 'textdomain'); 
+						$tag = get_queried_object(); echo ' <i class="small">('.$tag->count.' tulisan ditemukan)</i>';
 					}
 					else {
 						the_archive_title();
+						$arch = get_queried_object(); echo ' <i class="small">('.$arch->count.' tulisan ditemukan)</i>';
 					}
 				?>
             </div>
